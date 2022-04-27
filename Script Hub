@@ -1,44 +1,69 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Felix Script Hub"})
-local Tab = Window:MakeTab({
+local Window = OrionLib:MakeWindow({Name = "Felix Remastered Script Hub"})
+OrionLib:MakeNotification({
+	Name = "Welcome",
+	Content = "Welcome To Felix Remastered!",
+	Image = "rbxassetid://4483345998",
+	Time = 30
+})
+local FF = Window:MakeTab({
 	Name = "Funky Friday",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-OrionLib:MakeNotification({
-	Name = "Hi:)",
-	Content = "... Sad, Prob Upload Soon Tho.",
-	Image = "rbxassetid://4483345998",
-	Time = 5
+local MM2 = Window:MakeTab({
+	Name = "MM2",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
-Tab:AddButton({
-	Name = "Autoplayer Not Working This Sec Fix When I Get Home",
+local Kat = Window:MakeTab({
+	Name = "Kat",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+FF:AddButton({
+	Name = "Give Youtuber Mic",
 	Callback = function()
-       	loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
-		   print("Loaded")
+        loadstring(game:HttpGetAsync("https://pastebin.com/raw/VENcgJVr", true))()
   	end    
 })
- 
-Tab:AddButton({
-	Name = "Admin Animation",
+FF:AddButton({
+	Name = "Give Admin Animation",
 	Callback = function()
         loadstring(game:HttpGetAsync("https://pastebin.com/raw/wAi5N9Yh", true))()
-		print("Gave The Animation")
   	end    
 })
- 
-Tab:AddButton({
-	Name = "Content Creator Mic",
+FF:AddButton({
+	Name = "Auto Player NOT WORKING",
 	Callback = function()
-      	loadstring(game:HttpGetAsync("https://pastebin.com/raw/VENcgJVr", true))()
-		  print("Gave The Mic :)")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
   	end    
 })
-
-Tab:AddButton({
+FF:AddButton({
 	Name = "Give Boss Mics",
 	Callback = function()
-      	loadstring(game:HttpGetAsync("https://pastebin.com/raw/dQBRhwTk", true))()
-		  print("Gave Boss Mic's")
+        loadstring(game:HttpGetAsync("https://pastebin.com/raw/dQBRhwTk", true))()
+  	end    
+})
+Kat:AddButton({
+	Name = "Inject Script",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Coming Soon!",
+            Content = "Release Next Update. See Ya Till Then",
+            Image = "rbxassetid://4483345998",
+            Time = 30
+        })		
+  	end    
+})
+MM2:AddButton({
+	Name = "Inject Script",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Coming Soon!",
+            Content = "Release Next Update. See Ya Till Then",
+            Image = "rbxassetid://4483345998",
+            Time = 30
+        })		
   	end    
 })
