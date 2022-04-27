@@ -1,0 +1,44 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Felix Script Hub"})
+local Tab = Window:MakeTab({
+	Name = "Funky Friday",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+OrionLib:MakeNotification({
+	Name = "Hi:)",
+	Content = "... Sad, Prob Upload Soon Tho.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+Tab:AddButton({
+	Name = "Autoplayer Not Working This Sec Fix When I Get Home",
+	Callback = function()
+       	loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+		   print("Loaded")
+  	end    
+})
+ 
+Tab:AddButton({
+	Name = "Admin Animation",
+	Callback = function()
+        loadstring(game:HttpGetAsync("https://pastebin.com/raw/wAi5N9Yh", true))()
+		print("Gave The Animation")
+  	end    
+})
+ 
+Tab:AddButton({
+	Name = "Content Creator Mic",
+	Callback = function()
+      	loadstring(game:HttpGetAsync("https://pastebin.com/raw/VENcgJVr", true))()
+		  print("Gave The Mic :)")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Give Boss Mics",
+	Callback = function()
+      	loadstring(game:HttpGetAsync("https://pastebin.com/raw/dQBRhwTk", true))()
+		  print("Gave Boss Mic's")
+  	end    
+})
