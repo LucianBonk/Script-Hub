@@ -34,7 +34,7 @@ FF:AddButton({
   	end    
 })
 FF:AddButton({
-	Name = "Auto Player NOT WORKING",
+	Name = "Auto Player WORKING",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
   	end    
