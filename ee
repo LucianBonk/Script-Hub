@@ -1,0 +1,34 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Felix ScriptHub Remastered", HidePremium = false, SaveConfig = true, ConfigFolder = "ScriptHub"})
+local mm2 = Window:MakeTab({
+	Name = "Murder Mystery 2",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local bedwars = Window:MakeTab({
+	Name = "Bedwars",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local JailBreak = Window:MakeTab({
+	Name = "JailBreak",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Kat = Window:MakeTab({
+	Name = "Kat",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+OrionLib:MakeNotification({
+	Name = "Welcome!",
+	Content = "Development Have Been Slow Im Sorry... But This Took Aloong Time Tho. Just One Dev Is Hard.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+mm2:AddButton({
+	Name = "Use Script",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
+  	end    
+})
