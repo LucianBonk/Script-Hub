@@ -21,6 +21,17 @@ local Kat = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+local jailbreak = Window:MakeTab({
+	Name = "jailbreak",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Bedwars = Window:MakeTab({
+	Name = "Bedwars!",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
 FF:AddButton({
 	Name = "Give Youtuber Mic",
 	Callback = function()
@@ -46,11 +57,36 @@ FF:AddButton({
   	end    
 })
 Kat:AddButton({
-	Name = "Inject Script",
+	Name = "VG HUB",
 	Callback = function()
         OrionLib:MakeNotification({
-            Name = "Coming Soon!",
-            Content = "Release Next Update. See Ya Till Then",
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+            Name = "Welcome",
+            Content = "Exacuted Script.",
+            Image = "rbxassetid://4483345998",
+            Time = 30
+        })		
+  	end    
+})
+Kat:AddButton({
+	Name = "Green Script",
+	Callback = function()
+        OrionLib:MakeNotification({
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/LucianBonk/Ok/main/KAT?token=GHSAT0AAAAAABTFAHPJ6KXUPLE7V5NY5SVMYTKPGIA",true))()
+            Name = "Welcome",
+            Content = "Exacuted Script.",
+            Image = "rbxassetid://4483345998",
+            Time = 30
+        })		
+  	end    
+})
+Kat:AddButton({
+	Name = "Black Script",
+	Callback = function()
+        OrionLib:MakeNotification({
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/Knife-Ability-Test/main/Gui'))()
+            Name = "Welcome",
+            Content = "Exacuted Script.",
             Image = "rbxassetid://4483345998",
             Time = 30
         })		
@@ -60,8 +96,33 @@ MM2:AddButton({
 	Name = "Inject Script",
 	Callback = function()
         OrionLib:MakeNotification({
-            Name = "Coming Soon!",
-            Content = "Release Next Update. See Ya Till Then",
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
+            Name = "Welcome",
+            Content = "Exacuted Script.",
+            Image = "rbxassetid://4483345998",
+            Time = 30
+        })			
+  	end    
+})
+Bedwars:AddButton({
+	Name = "Inject Script",
+	Callback = function()
+        OrionLib:MakeNotification({
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+            Name = "Welcome",
+            Content = "Exacuted Script.",
+            Image = "rbxassetid://4483345998",
+            Time = 30
+        })		
+  	end    
+})
+jailbreak:AddButton({
+	Name = "Inject Script",
+	Callback = function()
+        OrionLib:MakeNotification({
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+            Name = "Welcome",
+            Content = "Exacuted Script.",
             Image = "rbxassetid://4483345998",
             Time = 30
         })		
