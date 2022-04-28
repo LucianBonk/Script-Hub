@@ -1,3 +1,7 @@
+if game.PlaceId == 142823291 then
+if game.PlaceId == 6872265039 then
+if game.PlaceId == 621129760 then
+if game.PlaceId == 606849621 then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Felix ScriptHub Remastered", HidePremium = false, SaveConfig = true, ConfigFolder = "ScriptHub"})
 local mm2 = Window:MakeTab({
