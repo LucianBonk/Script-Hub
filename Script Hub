@@ -68,30 +68,6 @@ Kat:AddButton({
         })		
   	end    
 })
-Kat:AddButton({
-	Name = "Green Script",
-	Callback = function()
-        OrionLib:MakeNotification({
-	    loadstring(game:HttpGet("https://raw.githubusercontent.com/LucianBonk/Ok/main/KAT?token=GHSAT0AAAAAABTFAHPJ6KXUPLE7V5NY5SVMYTKPGIA",true))()
-            Name = "Welcome",
-            Content = "Exacuted Script.",
-            Image = "rbxassetid://4483345998",
-            Time = 30
-        })		
-  	end    
-})
-Kat:AddButton({
-	Name = "Black Script",
-	Callback = function()
-        OrionLib:MakeNotification({
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/Knife-Ability-Test/main/Gui'))()
-            Name = "Welcome",
-            Content = "Exacuted Script.",
-            Image = "rbxassetid://4483345998",
-            Time = 30
-        })		
-  	end    
-})
 MM2:AddButton({
 	Name = "Inject Script",
 	Callback = function()
