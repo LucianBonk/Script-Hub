@@ -32,3 +32,21 @@ mm2:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
   	end    
 })
+JailBreak:AddButton({
+	Name = "Use Script",
+	Callback = function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+  	end    
+})
+Kat:AddButton({
+	Name = "Vg Hub :/",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+  	end    
+})
+bedwars:AddButton({
+	Name = "Use Script",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+  	end    
+})
